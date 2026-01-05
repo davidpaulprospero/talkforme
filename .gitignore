@@ -205,3 +205,13 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Talk For Me specific
+# Keep the template but ignore actual conversation data
+data/*.json
+!data/conversation_history.json
+
+# Audio files
+temp.wav
+*.wav
+*.mp3

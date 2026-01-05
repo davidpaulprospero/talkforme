@@ -1,0 +1,38 @@
+{
+  "version": "1.0",
+  "audio": {
+    "sample_rate": 16000,
+    "channels": 1,
+    "chunk_size": 2048,
+    "input_device_index": 9,
+    "energy_threshold": 500,
+    "silence_duration": 0.9
+  },
+  "llm": {
+    "temperature": 0.7,
+    "max_tokens": 30,
+    "num_suggestions": 4
+  },
+  "stt": {
+    "language": "en-US",
+    "provider": "vosk",
+    "model": "models/vosk-model-small-en-us-0.15"
+  },
+  "conversation": {
+    "max_history": 20,
+    "context_messages": 5,
+    "auto_save": true,
+    "data_dir": "data"
+  },
+  "transcription": {
+    "min_words": 3
+  },
+  "tones": [
+    "casual"
+  ],
+  "ui": {
+    "show_confidence": true,
+    "show_reasoning": false,
+    "auto_read_suggestions": false
+  }
+}
