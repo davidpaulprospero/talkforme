@@ -29,7 +29,8 @@ A real-time conversation suggestion system that listens to conversations and gen
 
 1. Clone the repository:
    ```bash
-   cd d:\talkforme
+   git clone https://github.com/davidpaulprospero/talkforme.git
+   cd talkforme
    ```
 
 2. Install Python dependencies:
@@ -37,7 +38,13 @@ A real-time conversation suggestion system that listens to conversations and gen
    pip install -r requirements.txt
    ```
 
-3. Configure the application:
+3. Download the speech model (~68MB, not committed to this repo):
+
+   ```bash
+   python scripts/fetch_vosk_model.py
+   ```
+
+4. Configure the application:
    ```bash
    # Copy environment template
    cp .env.example .env
@@ -45,7 +52,7 @@ A real-time conversation suggestion system that listens to conversations and gen
    # Edit .env to configure Ollama settings (defaults should work)
    ```
 
-4. Verify `config.json` settings match your needs
+5. Verify `config.json` settings match your needs
 
 ## Usage
 

@@ -209,9 +209,11 @@ __marimo__/
 # Talk For Me specific
 # Keep the template but ignore actual conversation data
 data/*.json
-!data/conversation_history.json
 
 # Audio files
 temp.wav
 *.wav
 *.mp3
+
+# Vosk speech model (downloaded by scripts/fetch_vosk_model.py, ~68MB)
+models/
